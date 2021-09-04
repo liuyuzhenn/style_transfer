@@ -1,7 +1,7 @@
 import argparse
 
 def get_args():
-    parse = argparse.ArgumentParser('Train GAN!!')
+    parse = argparse.ArgumentParser('Style Transfer')
     parse.add_argument('-s', '--style_image', dest='simg', help='style image', type=str, required=True)
     parse.add_argument('-c', '--content_image', dest='cimg', help='content image', type=str, required=True)
     parse.add_argument('-o', '--out', default=r'./out.jpg', help='specify result\'s path', type=str)
